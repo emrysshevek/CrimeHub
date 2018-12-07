@@ -4,7 +4,7 @@ var UserSchema = new Schema({
     username: { type: String, unique: true },
     email: String,
     crimes: [{
-        operation: String
+        operation: String,
         weapons: [String],
         targets: [String],
         location: String,
