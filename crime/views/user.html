@@ -5,10 +5,11 @@
     <title>User Login and Sessions</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
 </head>
-
+<header>
+    User Information and Profile
+</header>
 <body>
     <div class="form-container" ng-controller="myController">
-        <p id="sectionTitle" class="form-header">User Profile</p>
         <form method="POST" action="/user/update">
             <label>Username:</label>
             <input type="text" id="username" name="username" ng-model="user.username" disabled><br>

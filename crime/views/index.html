@@ -5,15 +5,15 @@
     <title>User Login and Sessions</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
 </head>
-
+<header>
+    Welcome to your crime database! You are logged in 
+    <%= username %>
+</header>
+<br><br>
 <body>
     <div ng-controller="myController">
-        <h2 id="welcomeText">Welcome. You are Logged In as
-            <%= username %>
-        </h2>
         <a id="logoutLink" href="/logout">logout</a>
-        <a id="editLink" href="/user">Edit User</a>
-<<<<<<< HEAD
+        <a id="editLink" href="/user">Edit User</a><br><br>
         <p>Display Crimes</p>
     </div>
     <hr>
@@ -22,14 +22,9 @@
     </span>
     <hr>
     <span id="colorText">
-    Crime
+    My Crimes
         <%= crimes %>
-      </span>
-=======
-        <h3>My Crimes</h5>
-            <%= crimes %>
-    </div>
->>>>>>> dd67a085b8a9fa0eea59e2087b449945545b2cb6
+    </span>
     <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
     <script src="/javascripts/my_app.js"></script>
 </body>

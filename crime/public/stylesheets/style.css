@@ -1,8 +1,47 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 18px;
+  background-color: #666699;
+  color: white;
+  font-family: 'Righteous', cursive;
 }
-
+header {
+    padding: 20px;
+  font-family: 'Righteous', cursive;
+  font-size: 40px;
+  text-align: center;
+  background-color: black;
+}
 a {
+  font-family: 'Righteous', cursive;
   color: #00B7FF;
+  text-decoration: none;
+}
+#logoutLink, #editLink, #signUpLink {
+  font-family: 'Righteous', cursive;
+  padding: 14px 16px;
+  background-color:black;
+  color: white;
+  font: 18px;
+}
+#login, #register, #save, #delete {
+  font-family: 'Righteous', cursive;
+  padding: 14px 16px;
+  background-color:black;
+  color: white;
+  border:none;
+  cursor: pointer;
+  font: 18px;
+}
+#homeLink {
+  font-family: 'Righteous', cursive;
+  float:right;
+  padding: 14px 16px;
+  background-color:black;
+  color: white;
+  border:none;
+  cursor: pointer;
+}
+#userMsg, #indexMsg, #signupMsg, #loginMsg, #colorText {
+  font-family: 'Righteous', cursive;
+  font-size: 24px;
 }
