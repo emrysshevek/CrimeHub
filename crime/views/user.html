@@ -4,10 +4,11 @@
 <head>
     <title>User Login and Sessions</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
 </head>
 <header>
     User Information and Profile
-</header>
+</header> <br>
 <body>
     <div class="form-container" ng-controller="myController">
         <form method="POST" action="/user/update">
@@ -15,12 +16,20 @@
             <input type="text" id="username" name="username" ng-model="user.username" disabled><br>
             <label>Email:</label>
             <input type="email" id="email" name="email" ng-model="user.email"><br>          
-            <label>Operation:</label>
-            <input type="text" id="operation">
+            <label>My Crime:</label><br>
+            <input type="text" id="operation" ng-model="user.crimes.operation" placeholder="operation name"><br>
+            <input type="text" id="weapons" ng-model="user.crimes.weapons" placeholder="weapons used"><br>
+            <input type="text" id="targets" ng-model="user.crimes.targets" placeholder="targets"><br>
+            <input type="text" id="location" ng-model="user.crimes.location" placeholder="location">
+            <input type="text" id="date" ng-model="user.crimes.date" placeholder="date"><br>
+            <input type="text" id="bounty" ng-model="user.crimes.bounty" placeholder="bounty type">
+            <input type="text" id="value" ng-model="user.crimes.value" placeholder="bounty value">
+            <br><br>
             <input type="submit" id="save" value="Save">
             
         </form>
     </div>
+    <br>
     <form method="POST" action="/user/delete">
         <input type="submit" id="delete" value="Delete User">
     </form>

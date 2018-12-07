@@ -4,21 +4,23 @@
 <head>
     <title>User Login and Sessions</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
 </head>
 <header>
     Login
 </header>
+<br>
 <body>  
     <div class="form-container">
         <form method="POST" action="/login">
             <label>Username:</label>
             <input type="text" id="username" name="username"><br>
             <label>Password:</label>
-            <input type="password" id="password" name="password"><br>
+            <input type="password" id="password" name="password"><br><br>
             <input type="submit" id="login" value="Login">
         </form>
-    </div>
-    <a id="signUpLink" href="/signup">Sign Up</a>
+    </div><br>
+    <a id="signUpLink" href="/signup">Sign Up</a><br><br>
     <hr>
     <span id="loginMsg">
     <%= msg %>
