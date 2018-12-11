@@ -5,6 +5,8 @@
     <title>User Login and Sessions</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+
 </head>
 <header>
     Welcome to CrimeHub! You are logged in
@@ -18,9 +20,18 @@
         <a id="logoutLink" href="/logout">logout</a>
         <a id="editLink" href="/user">Edit User</a>
         <h3>My Crimes</h5>
-            <%= crimes %>
+            <ul>
+                <li id="crime" ng-repeat="crime in crimes">
+                    Operation {{crime.operation}}
+                    <ul id="crimeDetails">
+                        <li>{{crime.location}} {{crime.date}}</li>
+                        <li>Target(s): {{crime.targets}}</li>
+                        <li>Bounty: {{crime.bounty}} ({{crime.value}})</li>
+                        <li>Weapons: {{crime.weapons}}</li>
+                    </ul>
+                </li>
+            </ul>
     </div>
-    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
     <script src="/javascripts/my_app.js"></script>
 </body>
 

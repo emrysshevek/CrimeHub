@@ -5,6 +5,7 @@ body {
   color: black;
   font-family: 'Taviraj', serif;
 }
+
 header {
   padding: 20px;
   font-family: 'Taviraj', serif;
@@ -13,41 +14,68 @@ header {
   background-color: black;
   color: white;
 }
+
 h1 {
   font-size: 28px;
   text-align: center;
 }
+
 a {
   font-family: 'Taviraj', serif;
   color: #00B7FF;
   text-decoration: none;
 }
-#logoutLink, #editLink, #signUpLink {
+
+#logoutLink,
+#editLink,
+#signUpLink {
   font-family: 'Taviraj', serif;
   padding: 14px 16px;
-  background-color:black;
+  background-color: black;
   color: white;
   font: 18px;
 }
-#login, #register, #save, #delete {
+
+#login,
+#register,
+#save,
+#delete {
   font-family: 'Taviraj', serif;
   padding: 14px 16px;
-  background-color:black;
+  background-color: black;
   color: white;
-  border:none;
+  border: none;
   cursor: pointer;
   font: 18px;
 }
+
 #homeLink {
   font-family: 'Taviraj', serif;
-  float:right;
+  float: right;
   padding: 14px 16px;
-  background-color:black;
+  background-color: black;
   color: white;
-  border:none;
+  border: none;
   cursor: pointer;
 }
-#userMsg, #indexMsg, #signupMsg, #loginMsg, #colorText {
+
+#userMsg,
+#indexMsg,
+#signupMsg,
+#loginMsg,
+#colorText {
   font-family: 'Taviraj', serif;
   font-size: 24px;
+}
+
+#crime {
+  list-style-type: none;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#crimeDetails {
+  background-color: grey;
 }
