@@ -1,8 +1,53 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 18px;
+  background-image: url("https://www.udutu.com/wp-content/uploads/2016/08/ivory-off-white-paper-texture.jpg");
+  background-color: #666699;
+  color: black;
+  font-family: 'Taviraj', serif;
 }
-
+header {
+  padding: 20px;
+  font-family: 'Taviraj', serif;
+  font-size: 40px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+h1 {
+  font-size: 28px;
+  text-align: center;
+}
 a {
+  font-family: 'Taviraj', serif;
   color: #00B7FF;
+  text-decoration: none;
+}
+#logoutLink, #editLink, #signUpLink {
+  font-family: 'Taviraj', serif;
+  padding: 14px 16px;
+  background-color:black;
+  color: white;
+  font: 18px;
+}
+#login, #register, #save, #delete {
+  font-family: 'Taviraj', serif;
+  padding: 14px 16px;
+  background-color:black;
+  color: white;
+  border:none;
+  cursor: pointer;
+  font: 18px;
+}
+#homeLink {
+  font-family: 'Taviraj', serif;
+  float:right;
+  padding: 14px 16px;
+  background-color:black;
+  color: white;
+  border:none;
+  cursor: pointer;
+}
+#userMsg, #indexMsg, #signupMsg, #loginMsg, #colorText {
+  font-family: 'Taviraj', serif;
+  font-size: 24px;
 }

@@ -4,22 +4,34 @@
 <head>
     <title>User Login and Sessions</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
 </head>
+<header>
+    User Information and Profile
+</header> <br>
 
 <body>
     <div class="form-container" ng-controller="myController">
-        <p id="sectionTitle" class="form-header">User Profile</p>
         <form method="POST" action="/user/update">
             <label>Username:</label>
             <input type="text" id="username" name="username" ng-model="user.username" disabled><br>
             <label>Email:</label>
-            <input type="email" id="email" name="email" ng-model="user.email"><br>          
-            <label>Operation:</label>
-            <input type="text" id="operation">
+            <input type="email" id="email" name="email" ng-model="user.email"><br>
+
+            <label>My Crime:</label><br>
+            <input type="text" id="operation" name="operation" ng-model="user.crimes.operation" placeholder="operation name"><br>
+            <input type="text" id="weapons" name="weapons" ng-model="user.crimes.weapons" placeholder="weapons used"><br>
+            <input type="text" id="targets" name="targets" ng-model="user.crimes.targets" placeholder="targets"><br>
+            <input type="text" id="location" name="location" ng-model="user.crimes.location" placeholder="location">
+            <input type="text" id="date" name="date" ng-model="user.crimes.date" placeholder="date"><br>
+            <input type="text" id="bounty" name="bounty" ng-model="user.crimes.bounty" placeholder="bounty type">
+            <input type="text" id="value" name="value" ng-model="user.crimes.value" placeholder="bounty value">
+            <br><br>
             <input type="submit" id="save" value="Save">
-            
+            <!--HOW TO SAVE ALL THESE IN A LIST-->
         </form>
     </div>
+    <br>
     <form method="POST" action="/user/delete">
         <input type="submit" id="delete" value="Delete User">
     </form>

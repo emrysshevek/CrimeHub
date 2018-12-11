@@ -68,12 +68,37 @@ exports.updateUser = function(req, res){ //CHANGE THIS ONE
   User.findOne({ _id: req.session.user })
   .exec(function(err, user) {
     user.set('email', req.body.email);
-    user.set('crimes', req.body.crimes); 
+    var newcrime=user.crimes
+    if(newcrime==null)
+    {
+    newcrime=[{operation: req.body.operation,
+        weapons: req.body.weapons ,
+        targets:  req.body.targets,
+        location:  req.body.location,
+        date:  req.body.date,
+        bounty:  req.body.bounty,
+        value:  req.body.value}]
+    }
+    else{
+      newcrime.push({
+        operation: req.body.operation,
+        weapons: req.body.weapons ,
+        targets:  req.body.targets,
+        location:  req.body.location,
+        date:  req.body.date,
+        bounty:  req.body.bounty,
+        value:  req.body.value
+      })
+    }
+          user.set('crimes',newcrime)
     user.save(function(err) {
       if (err){
+                console.log(" noWorks")
         res.sessor.error = err;
       } else {
+        console.log(user)
         req.session.msg = 'User Updated.';
+        console.log(user.crimes)
         req.session.crimes = req.body.crimes;
       }
       res.redirect('/user');

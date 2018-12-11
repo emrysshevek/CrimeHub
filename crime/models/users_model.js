@@ -5,8 +5,8 @@ var UserSchema = new Schema({
     email: String,
     crimes: [{
         operation: String,
-        weapons: [String],
-        targets: [String],
+        weapons: String,
+        targets: String,
         location: String,
         date: Date,
         bounty: String,
